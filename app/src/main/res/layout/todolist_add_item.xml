@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".application.main.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/todolist_add_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/todolist_add_item_button1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/btn_state"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/todolist_add_item_button2"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="215dp"
+            android:layout_marginBottom="120dp"
+            android:background="@drawable/btn_state"
+            android:text="削除" />
+
+
+        <TextView
+            android:id="@+id/todolist_add_item_text1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_state"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="ToDoリスト項目追加中"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/todolist_add_item_text2"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="225dp"
+            android:background="#CCCCCC"
+            android:gravity="center_horizontal|center_vertical"
+            android:hint="ファイル名を入力してください"
+            android:inputType="text" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

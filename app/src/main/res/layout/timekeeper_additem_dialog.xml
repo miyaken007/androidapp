@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/timekeeper_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/timekeeper_item_button1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/btn_state"
+            android:text="OK" />
+
+        <Button
+            android:id="@+id/timekeeper_item_button2"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="215dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/btn_state"
+            android:text="削除" />
+
+        <TextView
+            android:id="@+id/timekeeper_item_text1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_state"
+            android:text="タイムキーパー情報変更中"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/timekeeper_item_text2"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="160dp"
+            android:background="#CCCCCC"
+            android:ems="10"
+            android:hint="時間を入力してください"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="time" />
+
+        <EditText
+            android:id="@+id/timekeeper_item_text3"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="290dp"
+            android:background="#CCCCCC"
+            android:hint="計測時間中に表示する情報を\n入力してください"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="text" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
